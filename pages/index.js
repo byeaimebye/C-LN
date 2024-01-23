@@ -25,7 +25,9 @@ export default function Home({ recipe }) {
           )}
       </section>
       {visibleRecipes < recipe.length && (
-        <button onClick={handleLoadMore}>Load More</button>
+        <button onClick={handleLoadMore} data-testid="load-more">
+          Load More
+        </button>
       )}
     </RootLayout>
   );

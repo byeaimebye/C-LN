@@ -5,7 +5,10 @@ import React from "react";
 export const ShortCard = ({ recipe }) => {
   const date = DateFormat(recipe.display_date);
   return (
-    <article style={{ display: "flex", flexDirection: "column" }}>
+    <article
+      style={{ display: "flex", flexDirection: "column" }}
+      data-testid="short-card"
+    >
       <section>
         <a href>
           <picture>
